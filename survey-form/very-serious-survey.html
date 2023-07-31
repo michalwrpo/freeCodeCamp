@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Very Serious Survey</title>
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <h1 id='title'>Very Serious Survey</h1>
+    <p id='description'>A survey where we ask very serious questions.</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id="name-label" for='name'>Enter your name: <input id='name' type='text' placeholder="John Wicked" required /></label>
+        <label id="email-label" for='email'>Enter your email: <input id='email' name='email' type='email' placeholder="johnwicked@freecodecamp.org" required /></label>
+        <label id="number-label" for='number'>Enter your age: <input id='number' name='name' type='number' min='7' max='135' placeholder="21" required /></label>
+        <label for='dropdown'>What is your sex? 
+          <select id='dropdown' name="sex">
+            <option value='0'>Prefer not to say</option>
+            <option value='1'>Male</option>
+            <option value='2'>Female</option>
+            <option value='3'>Both</option>
+            <option value='4'>Neither</option>
+            <option value='5'>Either</option>
+          </select>
+        </label>
+      </fieldset> 
+      <fieldset>
+        <p id='milk-or-cereal' class='p-label'>Do you first put milk or cereal?</p>
+        <label for='milk'><input id='milk' name='milk-cereal' type='radio' value='1' class='inline' /> Milk</label>
+        <label for='cereal'><input id='cereal' name='milk-cereal' type='radio' value='2' class='inline' /> Cereal</label>
+        <label for='neither'><input id='neither' name='milk-cereal' type='radio' value='0' class='inline' /> I don't eat cereal</label>
+      </fieldset>
+      <fieldset>
+        <p id='drinkable' class='p-label'>Which of these are drinkable?</p>
+        <label for='cold-soft'><input id='cold-soft' name='drinks' type='checkbox' value='1' class='inline' /> Cold soft drinks</label>
+        <label for='hot-soft'><input id='hot-soft' name='drinks' type='checkbox' value='2' class='inline' /> Hot soft drinks</label>
+        <label for='cold-water'><input id='cold-water' name='drinks' type='checkbox' value='4' class='inline' /> Cold water</label>
+        <label for='hot-water'><input id='hot-water' name='drinks' type='checkbox' value='8' class='inline' /> Hot water</label>
+        <label for='cold-milk'><input id='cold-milk' name='drinks' type='checkbox' value='16' class='inline' /> Cold milk</label>
+        <label for='warm-milk'><input id='warm-milk' name='drinks' type='checkbox' value='32' class='inline' /> Warm milk</label>
+        <label for='hot-milk'><input id='hot-milk' name='drinks' type='checkbox' value='64' class='inline' /> Hot milk</label>
+        <label for='cold-alcohol'><input id='cold-alcohol' name='drinks' type='checkbox' value='128' class='inline' /> Cold alcohol</label>
+        <label for='warm-alcohol'><input id='' name='drinks' type='checkbox' value='256' class='inline' /> Warm alcohol</label>
+        <label for='hot-alcohol'><input id='hot-alcohol' name='drinks' type='checkbox' value='512' class='inline' /> Hot alcohol</label>
+      </fieldset>
+      <fieldset>
+        <label for='monologue'>What is your favorite Star Wars dialogue? <textarea id='monologue' rows='3' cols='20' placeholder="Hello there." /></textarea></label>
+      </fieldset>
+      <input id='submit' type='submit' value="Submit" />
+    </from>
+  </body>
+</html>
